@@ -1,0 +1,10 @@
+[package]
+name = "gta-city"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Bounded context: procedural city layout - blocks, zones, roads, lanes, buildings, props, walkable graph"
+
+[dependencies]
+gta-math = { path = "../math" }
+gta-geo = { path = "../geo" }

@@ -1,0 +1,9 @@
+[package]
+name = "gta-sky"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Bounded context: day/night cycle, sun, ambient and fog model"
+
+[dependencies]
+gta-math = { path = "../math" }

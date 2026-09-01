@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/math",
+  "crates/geo",
+  "crates/city",
+  "crates/agents",
+  "crates/avatar",
+  "crates/sky",
+  "crates/scene",
+  "crates/render",
+  "crates/app",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+debug = false
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+strip = "debuginfo"

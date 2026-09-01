@@ -1,0 +1,11 @@
+[package]
+name = "gta-agents"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Bounded context: pedestrian and vehicle agents moving on the city's graphs"
+
+[dependencies]
+gta-math = { path = "../math" }
+gta-geo = { path = "../geo" }
+gta-city = { path = "../city" }
